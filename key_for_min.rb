@@ -3,9 +3,16 @@ require "pry"
 # Given a hash with numeric values, return the key for the smallest value
 
 def key_for_min_value(name_hash)
-    binding.pry
+    lowest = 0
+    key_name = nil
     name_hash.each do |key, value|
-   # if value == 
+ 
+   if lowest == 0 || value < lowest
+       lowest = value
+       key_name = key
+       
+   end
+   
     #    nil
     #else
         
@@ -13,12 +20,21 @@ def key_for_min_value(name_hash)
     #end
 
 end
+key_name
 end
 
-#def largest_hash_key(hash)
-  #key = hash.sort{|a,b| a[1] <=> b[1]}.last
-  #puts key
-#end
+#to get this lowest key, we need to figure out what the lowest value is
+#to do that we need to compare each value to each other for each value that we have
+#then return the key associated with that value
 
-#hash = { "n" => 100, "m" => 100, "y" => 300, "d" => 200, "a" => 0 }
-#largest_hash_key(hash)
+#if the lowest value is = 0
+#or if the value is smaller than the lowest value
+
+#not these: 
+#key
+#keys
+#values
+#min
+#sort
+#sort_by
+#min_by
