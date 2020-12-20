@@ -7,9 +7,10 @@ def key_for_min_value(name_hash)
         nil
     else
         
-        test [0] [0]
+        name_hash [0] [0]
     end
 
+end
 end
 
 #def largest_hash_key(hash)
